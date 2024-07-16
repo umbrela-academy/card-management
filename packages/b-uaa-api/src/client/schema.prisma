@@ -1,0 +1,765 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../src/client"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x", "debian-openssl-3.0.x"]
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Principal {
+  id           String  @id @default(cuid())
+  name         String?
+  email        String  @unique
+  password     String
+  summary      String?
+  links        Json?
+  location     Json?
+  profileImage String?
+
+  refreshTokens RefreshToken[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("principal")
+}
+
+model RefreshToken {
+  id          String    @id @default(cuid())
+  hashedToken String
+  principalId String
+  principal   Principal @relation(fields: [principalId], references: [id], onDelete: Cascade)
+  revoked     Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+
+  @@map("refresh_token")
+}
+
+model Appointment {
+  id                String          @id @default(cuid())
+  uuid              String          @unique
+  appointmentTypeId String
+  patientId         String
+  locationId        String
+  providerId        String
+  startDatetime     DateTime
+  endDatetime       DateTime
+  voided            Boolean         @default(false)
+  voidedBy          String
+  dateVoided        DateTime
+  voidReason        String
+  creator           String
+  dateCreated       DateTime
+  lastChangedBy     String
+  lastChangedDate   DateTime
+  appointmentType   AppointmentType @relation(fields: [appointmentTypeId], references: [id])
+  location          Location        @relation(fields: [locationId], references: [id])
+  patient           Patient         @relation(fields: [patientId], references: [id])
+  provider          Provider        @relation(fields: [providerId], references: [id])
+
+  @@unique([patientId, locationId, providerId])
+  @@map("appointment")
+}
+
+model AppointmentType {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  name            String
+  description     String
+  duration        Int
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  appointmentList Appointment[]
+
+  @@map("appointment_type")
+}
+
+model Location {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  name            String
+  description     String
+  address1        String
+  address2        String
+  city            String
+  stateProvince   String
+  country         String
+  postalCode      String
+  latitude        Float
+  longitude       Float
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  appointmentList Appointment[]
+  encounterList   Encounter[]
+
+  @@map("location")
+}
+
+model Patient {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  givenName       String
+  middleName      String
+  familyName      String
+  gender          String
+  birthdate       DateTime
+  dead            Boolean       @default(false)
+  deathDate       DateTime
+  causeOfDeath    String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  appointmentList Appointment[]
+  encounterList   Encounter[]
+
+  @@map("patient")
+}
+
+model Provider {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  name            String
+  identifier      String
+  description     String
+  voided          Boolean       @default(false)
+  voidedBy        String
+  dateVoided      DateTime
+  voidReason      String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  appointmentList Appointment[]
+  encounterList   Encounter[]
+
+  @@map("provider")
+}
+
+model Form {
+  id                 String           @id @default(cuid())
+  uuid               String           @unique
+  name               String
+  description        String
+  version            String
+  retired            Boolean          @default(false)
+  retiredBy          String
+  dateRetired        DateTime
+  retiredReason      String
+  creator            String
+  dateCreated        DateTime
+  lastChangedBy      String
+  lastChangedDate    DateTime
+  fieldId            String?
+  encounterList      Encounter[]
+  dield              Field?           @relation(fields: [fieldId], references: [id])
+  formEncounterList  FormEncounter[]
+  formResourceList   FormResource[]
+  formSubmissionList FormSubmission[]
+
+  @@map("form")
+}
+
+model FormEncounter {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  formId          String
+  encounterId     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  encounter       Encounter @relation(fields: [encounterId], references: [id])
+  form            Form      @relation(fields: [formId], references: [id])
+
+  @@map("form_encounter")
+}
+
+model FormResource {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  formId          String
+  resourceId      String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  form            Form     @relation(fields: [formId], references: [id])
+  resource        Resource @relation(fields: [resourceId], references: [id])
+
+  @@map("form_resource")
+}
+
+model FormSubmission {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  formId          String
+  encounterId     String
+  submissionDate  DateTime
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  fieldAnswerList FieldAnswer[]
+  encounter       Encounter     @relation(fields: [encounterId], references: [id])
+  form            Form          @relation(fields: [formId], references: [id])
+
+  @@map("form_submission")
+}
+
+model Field {
+  id              String        @id @default(cuid())
+  uuid            String        @unique
+  name            String
+  description     String
+  fieldType       String
+  conceptId       String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept       @relation(fields: [conceptId], references: [id])
+  fieldAnswerList FieldAnswer[]
+  fieldOptionList FieldOption[]
+  formList        Form[]
+
+  @@map("field")
+}
+
+model FieldAnswer {
+  id               String         @id @default(cuid())
+  uuid             String         @unique
+  formSubmissionId String
+  fieldId          String
+  value            String
+  creator          String
+  dateCreated      DateTime
+  lastChangedBy    String
+  lastChangedDate  DateTime
+  field            Field          @relation(fields: [fieldId], references: [id])
+  formSubmission   FormSubmission @relation(fields: [formSubmissionId], references: [id])
+
+  @@map("field_answer")
+}
+
+model FieldOption {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  fieldId         String
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  field           Field    @relation(fields: [fieldId], references: [id])
+
+  @@map("field_option")
+}
+
+model Encounter {
+  id                 String           @id @default(cuid())
+  uuid               String           @unique
+  encounterTypeId    String
+  patientId          String
+  locationId         String
+  formId             String
+  providerId         String
+  startDatetime      DateTime
+  endDatetime        DateTime
+  voided             Boolean          @default(false)
+  voidedBy           String
+  dateVoided         DateTime
+  voidReason         String
+  creator            String
+  dateCreated        DateTime
+  lastChangedBy      String
+  lastChangedDate    DateTime
+  encounterType      EncounterType    @relation(fields: [encounterTypeId], references: [id])
+  form               Form             @relation(fields: [formId], references: [id])
+  location           Location         @relation(fields: [locationId], references: [id])
+  patient            Patient          @relation(fields: [patientId], references: [id])
+  provider           Provider         @relation(fields: [providerId], references: [id])
+  formEncounterList  FormEncounter[]
+  formSubmissionList FormSubmission[]
+  obsList            Obs[]
+  orderList          Order[]
+
+  @@map("encounter")
+}
+
+model EncounterType {
+  id              String      @id @default(cuid())
+  uuid            String      @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  encounterList   Encounter[]
+
+  @@map("encounter_type")
+}
+
+model Obs {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  conceptId       String
+  encounterId     String
+  obsDatetime     DateTime
+  valueDatetime   DateTime
+  valueNumeric    Float
+  valueText       String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept   @relation(fields: [conceptId], references: [id])
+  encounter       Encounter @relation(fields: [encounterId], references: [id])
+
+  @@map("obs")
+}
+
+model Order {
+  id               String          @id @default(cuid())
+  uuid             String          @unique
+  conceptId        String
+  encounterId      String
+  orderDatetime    DateTime
+  instructions     String
+  dosage           String
+  route            String
+  frequency        String
+  asNeeded         Boolean         @default(false)
+  prn              Boolean         @default(false)
+  quantity         Int
+  units            String
+  creator          String
+  dateCreated      DateTime
+  lastChangedBy    String
+  lastChangedDate  DateTime
+  orderFrequencyId String?
+  orderRouteId     String?
+  orderTypeId      String?
+  orderUnitId      String?
+  concept          Concept         @relation(fields: [conceptId], references: [id])
+  encounter        Encounter       @relation(fields: [encounterId], references: [id])
+  OrderFrequency   OrderFrequency? @relation(fields: [orderFrequencyId], references: [id])
+  OrderRoute       OrderRoute?     @relation(fields: [orderRouteId], references: [id])
+  OrderType        OrderType?      @relation(fields: [orderTypeId], references: [id])
+  OrderUnit        OrderUnit?      @relation(fields: [orderUnitId], references: [id])
+
+  @@map("order")
+}
+
+model OrderFrequency {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  orderList       Order[]
+
+  @@map("order_frequency")
+}
+
+model OrderRoute {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  orderList       Order[]
+
+  @@map("order_route")
+}
+
+model OrderType {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  orderList       Order[]
+
+  @@map("order_type")
+}
+
+model OrderUnit {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  orderList       Order[]
+
+  @@map("order_unit")
+}
+
+model Concept {
+  id                  String            @id @default(cuid())
+  uuid                String            @unique
+  name                String
+  description         String
+  dataType            String
+  class               String
+  isRetired           Boolean           @default(false)
+  retiredBy           String
+  dateRetired         DateTime
+  retiredReason       String
+  creator             String
+  dateCreated         DateTime
+  lastChangedBy       String
+  lastChangedDate     DateTime
+  conceptClassId      String?
+  conceptDatatypeId   String?
+  conceptMapId        String?
+  conceptSetId        String?
+  conceptSourceId     String?
+  ConceptClass        ConceptClass?     @relation(fields: [conceptClassId], references: [id])
+  ConceptDatatype     ConceptDatatype?  @relation(fields: [conceptDatatypeId], references: [id])
+  conceptMap          ConceptMap?       @relation(fields: [conceptMapId], references: [id])
+  conceptSet          ConceptSet?       @relation(fields: [conceptSetId], references: [id])
+  conceptSource       ConceptSource?    @relation(fields: [conceptSourceId], references: [id])
+  answerList          ConceptAnswer[]   @relation("answer_concept")
+  metaList            ConceptAnswer[]   @relation("meta_concept")
+  conceptNameList     ConceptName[]
+  conceptNumericList  ConceptNumeric[]
+  conceptProposalList ConceptProposal[]
+  conceptWordList     ConceptWord[]
+  fieldList           Field[]
+  obsList             Obs[]
+  orderList           Order[]
+
+  @@map("concept")
+}
+
+model ConceptAnswer {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  conceptId       String
+  answerConceptId String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  answerConcept   Concept  @relation("answer_concept", fields: [answerConceptId], references: [id])
+  concept         Concept  @relation("meta_concept", fields: [conceptId], references: [id])
+
+  @@map("concept_answer")
+}
+
+model ConceptClass {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  conceptList     Concept[]
+
+  @@map("concept_class")
+}
+
+model ConceptDatatype {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  conceptList     Concept[]
+
+  @@map("concept_data_type")
+}
+
+model ConceptMap {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  conceptList     Concept[]
+
+  @@map("concept_map")
+}
+
+model ConceptName {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  conceptId       String
+  name            String
+  locale          String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept  @relation(fields: [conceptId], references: [id])
+
+  @@map("concept_name")
+}
+
+model ConceptNumeric {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  conceptId       String
+  hiAbsolute      Float
+  hiCritical      Float
+  hiNormal        Float
+  lowAbsolute     Float
+  lowCritical     Float
+  lowNormal       Float
+  units           String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept  @relation(fields: [conceptId], references: [id])
+
+  @@map("concept_numeric")
+}
+
+model ConceptProposal {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  conceptId       String
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept  @relation(fields: [conceptId], references: [id])
+
+  @@map("concept_proposal")
+}
+
+model ConceptSet {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  conceptList     Concept[]
+
+  @@map("concept_set")
+}
+
+model ConceptSource {
+  id              String    @id @default(cuid())
+  uuid            String    @unique
+  name            String
+  description     String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  conceptList     Concept[]
+
+  @@map("concept_source")
+}
+
+model ConceptWord {
+  id              String   @id @default(cuid())
+  uuid            String   @unique
+  conceptId       String
+  word            String
+  locale          String
+  creator         String
+  dateCreated     DateTime
+  lastChangedBy   String
+  lastChangedDate DateTime
+  concept         Concept  @relation(fields: [conceptId], references: [id])
+
+  @@map("concept_word")
+}
+
+model Resource {
+  id               String         @id @default(cuid())
+  uuid             String         @unique
+  name             String
+  description      String
+  creator          String
+  dateCreated      DateTime
+  lastChangedBy    String
+  lastChangedDate  DateTime
+  formResourceList FormResource[]
+
+  @@map("resource")
+}
+
+model BlogPost {
+  id                     String               @id @default(cuid())
+  title                  String
+  content                String
+  context                Json
+  authorId               String
+  spaceTimeCoordinatesId String               @unique
+  author                 BlogPostAuthor       @relation(fields: [authorId], references: [id])
+  spaceTimeCoordinates   SpaceTimeCoordinates @relation(fields: [spaceTimeCoordinatesId], references: [id])
+  tagArrowList           BlogPostTagArrow[]
+
+  @@map("blog_post")
+}
+
+model BlogPostTag {
+  id            String             @id @default(cuid())
+  name          String
+  descriptor    String?
+  postArrowList BlogPostTagArrow[]
+
+  @@map("blog_post_tag")
+}
+
+model BlogPostTagArrow {
+  id     String      @id @default(cuid())
+  postId String
+  tagId  String
+  post   BlogPost    @relation(fields: [postId], references: [id])
+  tag    BlogPostTag @relation(fields: [tagId], references: [id])
+
+  @@unique([postId, tagId])
+  @@map("blog_post_tag_arrow")
+}
+
+model BlogPostAuthor {
+  id           String     @id @default(cuid())
+  name         String
+  blogPostList BlogPost[]
+
+  @@map("blog_post_author")
+}
+
+model SpaceTimeCoordinates {
+  id         String    @id @default(cuid())
+  latitude   Float
+  longitude  Float
+  startTime  Float
+  pauseTime  Float?
+  stopTime   Float
+  timezone   String
+  blogPostId String    @db.Uuid
+  BlogPost   BlogPost?
+
+  @@map("space_time_coordinates")
+}
+
+model BudgetEntry {
+  id            String   @id @default(cuid())
+  serviceId     String
+  cost          Float
+  discount      Float
+  promotion     Float
+  subtotal      Float
+  percentChange Float
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  budgetId      String
+  budget        Budget   @relation(fields: [budgetId], references: [id])
+  service       Service  @relation(fields: [serviceId], references: [id])
+}
+
+model Service {
+  id          String        @id @default(cuid())
+  description String
+  category    String
+  metadata    Json
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  entryList   BudgetEntry[]
+}
+
+model Budget {
+  id         String          @id @default(cuid())
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  fiscalYear Int
+  reportId   String?
+  userList   BudgetBudUser[]
+  entryList  BudgetEntry[]
+  report     Report?
+}
+
+model Report {
+  id             String   @id @default(cuid())
+  budgetId       String   @unique
+  totalCost      Float
+  totalDiscount  Float
+  totalPromotion Float
+  totalSubtotal  Float
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  budget         Budget   @relation(fields: [budgetId], references: [id])
+}
+
+model BudUser {
+  id         String          @id @default(cuid())
+  name       String
+  email      String          @unique
+  password   String
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  eventList  BudEvent[]
+  budgetList BudgetBudUser[]
+
+  @@map("BudgetUser")
+}
+
+model BudgetBudUser {
+  userId   String
+  budgetId String
+  role     String
+  ability  String
+  category String
+  budget   Budget  @relation(fields: [budgetId], references: [id])
+  user     BudUser @relation(fields: [userId], references: [id])
+
+  @@id([userId, budgetId])
+  @@map("BudgetBudgetUser")
+}
+
+model BudEvent {
+  id           String   @id @default(cuid())
+  type         String
+  description  String
+  categoryList String[]
+  metadata     Json
+  budUserId    String
+  createdAt    DateTime @default(now())
+  budUser      BudUser  @relation(fields: [budUserId], references: [id])
+}

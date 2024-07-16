@@ -1,0 +1,20 @@
+{
+  "name": "b-uaa-api",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/jwt": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.5",
+    "@prisma/client": "^5.16.2",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.16.2",
+    "prisma-dbml-generator": "^0.12.0"
+  },
+  "module": "src/index.js"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "b-uaa-mono",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

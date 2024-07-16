@@ -1,0 +1,778 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table principal {
+  id String [pk]
+  name String
+  email String [unique, not null]
+  password String [not null]
+  summary String
+  links Json
+  location Json
+  profileImage String
+  refreshTokens refresh_token [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+}
+
+Table refresh_token {
+  id String [pk]
+  hashedToken String [not null]
+  principalId String [not null]
+  principal principal [not null]
+  revoked Boolean [not null, default: false]
+  createdAt DateTime [default: `now()`, not null]
+}
+
+Table appointment {
+  id String [pk]
+  uuid String [unique, not null]
+  appointmentTypeId String [not null]
+  patientId String [not null]
+  locationId String [not null]
+  providerId String [not null]
+  startDatetime DateTime [not null]
+  endDatetime DateTime [not null]
+  voided Boolean [not null, default: false]
+  voidedBy String [not null]
+  dateVoided DateTime [not null]
+  voidReason String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  appointmentType appointment_type [not null]
+  location location [not null]
+  patient patient [not null]
+  provider provider [not null]
+
+  indexes {
+    (patientId, locationId, providerId) [unique]
+  }
+}
+
+Table appointment_type {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  duration Int [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  appointmentList appointment [not null]
+}
+
+Table location {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  address1 String [not null]
+  address2 String [not null]
+  city String [not null]
+  stateProvince String [not null]
+  country String [not null]
+  postalCode String [not null]
+  latitude Float [not null]
+  longitude Float [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  appointmentList appointment [not null]
+  encounterList encounter [not null]
+}
+
+Table patient {
+  id String [pk]
+  uuid String [unique, not null]
+  givenName String [not null]
+  middleName String [not null]
+  familyName String [not null]
+  gender String [not null]
+  birthdate DateTime [not null]
+  dead Boolean [not null, default: false]
+  deathDate DateTime [not null]
+  causeOfDeath String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  appointmentList appointment [not null]
+  encounterList encounter [not null]
+}
+
+Table provider {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  identifier String [not null]
+  description String [not null]
+  voided Boolean [not null, default: false]
+  voidedBy String [not null]
+  dateVoided DateTime [not null]
+  voidReason String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  appointmentList appointment [not null]
+  encounterList encounter [not null]
+}
+
+Table form {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  version String [not null]
+  retired Boolean [not null, default: false]
+  retiredBy String [not null]
+  dateRetired DateTime [not null]
+  retiredReason String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  fieldId String
+  encounterList encounter [not null]
+  dield field
+  formEncounterList form_encounter [not null]
+  formResourceList form_resource [not null]
+  formSubmissionList form_submission [not null]
+}
+
+Table form_encounter {
+  id String [pk]
+  uuid String [unique, not null]
+  formId String [not null]
+  encounterId String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  encounter encounter [not null]
+  form form [not null]
+}
+
+Table form_resource {
+  id String [pk]
+  uuid String [unique, not null]
+  formId String [not null]
+  resourceId String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  form form [not null]
+  resource resource [not null]
+}
+
+Table form_submission {
+  id String [pk]
+  uuid String [unique, not null]
+  formId String [not null]
+  encounterId String [not null]
+  submissionDate DateTime [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  fieldAnswerList field_answer [not null]
+  encounter encounter [not null]
+  form form [not null]
+}
+
+Table field {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  fieldType String [not null]
+  conceptId String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+  fieldAnswerList field_answer [not null]
+  fieldOptionList field_option [not null]
+  formList form [not null]
+}
+
+Table field_answer {
+  id String [pk]
+  uuid String [unique, not null]
+  formSubmissionId String [not null]
+  fieldId String [not null]
+  value String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  field field [not null]
+  formSubmission form_submission [not null]
+}
+
+Table field_option {
+  id String [pk]
+  uuid String [unique, not null]
+  fieldId String [not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  field field [not null]
+}
+
+Table encounter {
+  id String [pk]
+  uuid String [unique, not null]
+  encounterTypeId String [not null]
+  patientId String [not null]
+  locationId String [not null]
+  formId String [not null]
+  providerId String [not null]
+  startDatetime DateTime [not null]
+  endDatetime DateTime [not null]
+  voided Boolean [not null, default: false]
+  voidedBy String [not null]
+  dateVoided DateTime [not null]
+  voidReason String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  encounterType encounter_type [not null]
+  form form [not null]
+  location location [not null]
+  patient patient [not null]
+  provider provider [not null]
+  formEncounterList form_encounter [not null]
+  formSubmissionList form_submission [not null]
+  obsList obs [not null]
+  orderList order [not null]
+}
+
+Table encounter_type {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  encounterList encounter [not null]
+}
+
+Table obs {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  encounterId String [not null]
+  obsDatetime DateTime [not null]
+  valueDatetime DateTime [not null]
+  valueNumeric Float [not null]
+  valueText String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+  encounter encounter [not null]
+}
+
+Table order {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  encounterId String [not null]
+  orderDatetime DateTime [not null]
+  instructions String [not null]
+  dosage String [not null]
+  route String [not null]
+  frequency String [not null]
+  asNeeded Boolean [not null, default: false]
+  prn Boolean [not null, default: false]
+  quantity Int [not null]
+  units String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  orderFrequencyId String
+  orderRouteId String
+  orderTypeId String
+  orderUnitId String
+  concept concept [not null]
+  encounter encounter [not null]
+  OrderFrequency order_frequency
+  OrderRoute order_route
+  OrderType order_type
+  OrderUnit order_unit
+}
+
+Table order_frequency {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  orderList order [not null]
+}
+
+Table order_route {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  orderList order [not null]
+}
+
+Table order_type {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  orderList order [not null]
+}
+
+Table order_unit {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  orderList order [not null]
+}
+
+Table concept {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  dataType String [not null]
+  class String [not null]
+  isRetired Boolean [not null, default: false]
+  retiredBy String [not null]
+  dateRetired DateTime [not null]
+  retiredReason String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptClassId String
+  conceptDatatypeId String
+  conceptMapId String
+  conceptSetId String
+  conceptSourceId String
+  ConceptClass concept_class
+  ConceptDatatype concept_data_type
+  conceptMap concept_map
+  conceptSet concept_set
+  conceptSource concept_source
+  answerList concept_answer [not null]
+  metaList concept_answer [not null]
+  conceptNameList concept_name [not null]
+  conceptNumericList concept_numeric [not null]
+  conceptProposalList concept_proposal [not null]
+  conceptWordList concept_word [not null]
+  fieldList field [not null]
+  obsList obs [not null]
+  orderList order [not null]
+}
+
+Table concept_answer {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  answerConceptId String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  answerConcept concept [not null]
+  concept concept [not null]
+}
+
+Table concept_class {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptList concept [not null]
+}
+
+Table concept_data_type {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptList concept [not null]
+}
+
+Table concept_map {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptList concept [not null]
+}
+
+Table concept_name {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  name String [not null]
+  locale String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+}
+
+Table concept_numeric {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  hiAbsolute Float [not null]
+  hiCritical Float [not null]
+  hiNormal Float [not null]
+  lowAbsolute Float [not null]
+  lowCritical Float [not null]
+  lowNormal Float [not null]
+  units String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+}
+
+Table concept_proposal {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+}
+
+Table concept_set {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptList concept [not null]
+}
+
+Table concept_source {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  conceptList concept [not null]
+}
+
+Table concept_word {
+  id String [pk]
+  uuid String [unique, not null]
+  conceptId String [not null]
+  word String [not null]
+  locale String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  concept concept [not null]
+}
+
+Table resource {
+  id String [pk]
+  uuid String [unique, not null]
+  name String [not null]
+  description String [not null]
+  creator String [not null]
+  dateCreated DateTime [not null]
+  lastChangedBy String [not null]
+  lastChangedDate DateTime [not null]
+  formResourceList form_resource [not null]
+}
+
+Table blog_post {
+  id String [pk]
+  title String [not null]
+  content String [not null]
+  context Json [not null]
+  authorId String [not null]
+  spaceTimeCoordinatesId String [unique, not null]
+  author blog_post_author [not null]
+  spaceTimeCoordinates space_time_coordinates [not null]
+  tagArrowList blog_post_tag_arrow [not null]
+}
+
+Table blog_post_tag {
+  id String [pk]
+  name String [not null]
+  descriptor String
+  postArrowList blog_post_tag_arrow [not null]
+}
+
+Table blog_post_tag_arrow {
+  id String [pk]
+  postId String [not null]
+  tagId String [not null]
+  post blog_post [not null]
+  tag blog_post_tag [not null]
+
+  indexes {
+    (postId, tagId) [unique]
+  }
+}
+
+Table blog_post_author {
+  id String [pk]
+  name String [not null]
+  blogPostList blog_post [not null]
+}
+
+Table space_time_coordinates {
+  id String [pk]
+  latitude Float [not null]
+  longitude Float [not null]
+  startTime Float [not null]
+  pauseTime Float
+  stopTime Float [not null]
+  timezone String [not null]
+  blogPostId String [not null]
+  BlogPost blog_post
+}
+
+Table BudgetEntry {
+  id String [pk]
+  serviceId String [not null]
+  cost Float [not null]
+  discount Float [not null]
+  promotion Float [not null]
+  subtotal Float [not null]
+  percentChange Float [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  budgetId String [not null]
+  budget Budget [not null]
+  service Service [not null]
+}
+
+Table Service {
+  id String [pk]
+  description String [not null]
+  category String [not null]
+  metadata Json [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  entryList BudgetEntry [not null]
+}
+
+Table Budget {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  fiscalYear Int [not null]
+  reportId String
+  userList BudgetBudgetUser [not null]
+  entryList BudgetEntry [not null]
+  report Report
+}
+
+Table Report {
+  id String [pk]
+  budgetId String [unique, not null]
+  totalCost Float [not null]
+  totalDiscount Float [not null]
+  totalPromotion Float [not null]
+  totalSubtotal Float [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  budget Budget [not null]
+}
+
+Table BudgetUser {
+  id String [pk]
+  name String [not null]
+  email String [unique, not null]
+  password String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  eventList BudEvent [not null]
+  budgetList BudgetBudgetUser [not null]
+}
+
+Table BudgetBudgetUser {
+  userId String [not null]
+  budgetId String [not null]
+  role String [not null]
+  ability String [not null]
+  category String [not null]
+  budget Budget [not null]
+  user BudgetUser [not null]
+
+  indexes {
+    (userId, budgetId) [pk]
+  }
+}
+
+Table BudEvent {
+  id String [pk]
+  type String [not null]
+  description String [not null]
+  categoryList String[] [not null]
+  metadata Json [not null]
+  budUserId String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  budUser BudgetUser [not null]
+}
+
+Ref: refresh_token.principalId > principal.id [delete: Cascade]
+
+Ref: appointment.appointmentTypeId > appointment_type.id
+
+Ref: appointment.locationId > location.id
+
+Ref: appointment.patientId > patient.id
+
+Ref: appointment.providerId > provider.id
+
+Ref: form.fieldId > field.id
+
+Ref: form_encounter.encounterId > encounter.id
+
+Ref: form_encounter.formId > form.id
+
+Ref: form_resource.formId > form.id
+
+Ref: form_resource.resourceId > resource.id
+
+Ref: form_submission.encounterId > encounter.id
+
+Ref: form_submission.formId > form.id
+
+Ref: field.conceptId > concept.id
+
+Ref: field_answer.fieldId > field.id
+
+Ref: field_answer.formSubmissionId > form_submission.id
+
+Ref: field_option.fieldId > field.id
+
+Ref: encounter.encounterTypeId > encounter_type.id
+
+Ref: encounter.formId > form.id
+
+Ref: encounter.locationId > location.id
+
+Ref: encounter.patientId > patient.id
+
+Ref: encounter.providerId > provider.id
+
+Ref: obs.conceptId > concept.id
+
+Ref: obs.encounterId > encounter.id
+
+Ref: order.conceptId > concept.id
+
+Ref: order.encounterId > encounter.id
+
+Ref: order.orderFrequencyId > order_frequency.id
+
+Ref: order.orderRouteId > order_route.id
+
+Ref: order.orderTypeId > order_type.id
+
+Ref: order.orderUnitId > order_unit.id
+
+Ref: concept.conceptClassId > concept_class.id
+
+Ref: concept.conceptDatatypeId > concept_data_type.id
+
+Ref: concept.conceptMapId > concept_map.id
+
+Ref: concept.conceptSetId > concept_set.id
+
+Ref: concept.conceptSourceId > concept_source.id
+
+Ref: concept_answer.answerConceptId > concept.id
+
+Ref: concept_answer.conceptId > concept.id
+
+Ref: concept_name.conceptId > concept.id
+
+Ref: concept_numeric.conceptId > concept.id
+
+Ref: concept_proposal.conceptId > concept.id
+
+Ref: concept_word.conceptId > concept.id
+
+Ref: blog_post.authorId > blog_post_author.id
+
+Ref: blog_post.spaceTimeCoordinatesId - space_time_coordinates.id
+
+Ref: blog_post_tag_arrow.postId > blog_post.id
+
+Ref: blog_post_tag_arrow.tagId > blog_post_tag.id
+
+Ref: BudgetEntry.budgetId > Budget.id
+
+Ref: BudgetEntry.serviceId > Service.id
+
+Ref: Report.budgetId - Budget.id
+
+Ref: BudgetBudgetUser.budgetId > Budget.id
+
+Ref: BudgetBudgetUser.userId > BudgetUser.id
+
+Ref: BudEvent.budUserId > BudgetUser.id
