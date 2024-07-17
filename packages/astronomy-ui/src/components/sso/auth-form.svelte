@@ -26,7 +26,7 @@
 				<Label class="sr-only" for="email">Email</Label>
 				<Input
 					id="email"
-					placeholder="name@example.com"
+					placeholder="name@dbl.gov.np"
 					type="email"
 					autocapitalize="none"
 					autocomplete="email"
@@ -38,7 +38,7 @@
 				{#if isLoading}
 					<LoaderCircle class="mr-2 h-4 w-4 animate-spin" />
 				{/if}
-				Sign In with Email
+				Sign In
 			</Button>
 		</div>
 	</form>
