@@ -28,7 +28,7 @@
 		<div class="relative z-20 mt-auto">
 			<blockquote class="space-y-2">
 				<p class="text-lg">
-					This software was created as a part of a the Code Zen Workshop 2024 by Anarchitecture Foundation.
+					This software was created as a part of the Code Zen Workshop 2024 by Anarchitecture Foundation.
 				</p>
 				<footer class="text-sm">Risav Karna</footer>
 			</blockquote>
