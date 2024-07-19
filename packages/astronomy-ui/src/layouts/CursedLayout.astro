@@ -1,0 +1,25 @@
+---
+import { Button, Header, Heading, Row } from "fulldev-ui";
+import Layout from "./Layout.astro";
+import Panes from "$lib/components/nav/panes.svelte";
+---
+
+<Layout title="Welcome to C-CMS.">
+  <Header compact structure="spread">
+    <Heading as="a" class="mt-2" href="/"> Card Management </Heading>
+    <Row>
+      <Button
+        variant="ghost"
+        title="X / Twitter"
+        icon="brand-x"
+        href="https://x.com/risavkarna"
+        target="_blank"
+      />
+      <Button class="bg-slate-200" html="Docs" href="/overview/introduction/" />
+    </Row>
+  </Header>
+	<Panes client:only="svelte">
+		<slot />
+	</Panes>
+
+</Layout>
