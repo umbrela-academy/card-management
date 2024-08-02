@@ -4,7 +4,7 @@ import DashGrid from "$lib/layouts/dash-grid.svelte";
 ---
 
 <Layout title="Welcome to C-CMS.">
-	<DashGrid client:load>
+	<DashGrid client:only="svelte">
 		<slot/>
 	</DashGrid>
 </Layout>

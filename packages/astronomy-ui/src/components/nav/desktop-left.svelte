@@ -12,8 +12,7 @@
   import { docsConfig } from "$lib/components/nav/types";
   import { ScrollArea } from "$lib/components/ui/scroll-area";
 </script>
-
-<div class="flex-1">
+<div class="flex -ml-10 items-center gap-4 border-b bg-muted/40 px-4 ">
   <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
     <ScrollArea class="pl-8 h-full py-6 pr-6 lg:py-8">
     <a

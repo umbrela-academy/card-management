@@ -3,8 +3,12 @@
 	import AlignLeft from "lucide-svelte/icons/align-left"
 
   import { cn } from "$lib/utils";
-  let pathname = "";
+  let pathname = window.location.pathname;
+
+  $: console.log("pathname", pathname);
+
   export let items: SidebarNavItem[] = [];
+
 </script>
 
 {#if items.length}

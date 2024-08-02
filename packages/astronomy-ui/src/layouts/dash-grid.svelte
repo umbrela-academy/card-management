@@ -7,7 +7,6 @@
   import { Input } from "$lib/components/ui/input";
   import * as Sheet from "$lib/components/ui/sheet";
 
-  
   import DesktopLeft from "$lib/components/nav/desktop-left.svelte";
   import GlobalLeft from "$lib/components/nav/global-left.svelte";
   import UserRight from "$lib/components/nav/user-right.svelte";
@@ -17,9 +16,9 @@
   <div class="hidden border-r bg-muted/40 md:block">
     <div class="flex h-full max-h-screen flex-col gap-2">
       <div class="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-        <a href="/" class="flex items-center gap-2 font-semibold">
+        <a href="/dashboard" class="flex items-center gap-2 font-semibold">
           <Package2 class="h-6 w-6" />
-          <span class="align-self-center">DBL C-CMS</span>
+          <span class="align-self-center py-24">DBL C-CMS</span>
         </a>
       </div>
       <DesktopLeft />
@@ -58,7 +57,7 @@
     <UserRight />
     </header>
     <main class="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-      <slot />
+      <slot/>
     </main>
   </div>
 </div>

@@ -1,10 +1,11 @@
 <script lang="ts">
-	import DocsSidebarNavItems from "./docs-sidebar-nav-items.svelte";
 	import type { SidebarNavItem } from "$lib/components/nav/types";
 	import { cn } from "$lib/utils.js";
-	import AlignLeft from "lucide-svelte/icons/align-left"
+	import AlignLeft from "lucide-svelte/icons/align-left";
+	import DocsSidebarNavItems from "./docs-sidebar-nav-items.svelte";
 
 	export let items: SidebarNavItem[] = [];
+
 </script>
 
 {#if items.length}
