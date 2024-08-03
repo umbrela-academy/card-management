@@ -1,10 +1,9 @@
 <script lang="ts">
   import type { SidebarNavItem } from "$lib/components/nav/types";
-  import { cn } from "$lib/utils.js";
-  import DocsSidebarNavItems from "./docs-sidebar-nav-items.svelte";
-  import * as Collapsible from "../ui/collapsible";
-  import Button from "../ui/button/button.svelte";
   import ArrowDownUp from "lucide-svelte/icons/arrow-down-up";
+  import Button from "../ui/button/button.svelte";
+  import * as Collapsible from "../ui/collapsible";
+  import DocsSidebarNavItems from "./docs-sidebar-nav-items.svelte";
 
   export let items: SidebarNavItem[] = [];
 </script>
@@ -13,7 +12,7 @@
     {#each items as item, index (index)}
 		<Collapsible.Root open class="w-full ml-2">
       <div class="pb-4">
-        <div class="flex justify-start">
+        <div class="flex justify-between">
           <h4
             class="mb-1 rounded-md px-2 py-1 text-sm font-semibold flex flex-row"
           >
