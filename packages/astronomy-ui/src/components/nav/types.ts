@@ -1,13 +1,12 @@
 import type { ComponentType } from "svelte";
-import { sidebarNav } from "./zen";
-import {type Icon} from "lucide-svelte";
+import { sidebarEmployeeNav, sidebarPatientNav } from "./zen";
 
 export type NavItem = {
 	title: string;
 	href?: string;
 	disabled?: boolean;
 	external?: boolean;
-	icon?: ComponentType<Icon>;
+	icon: ComponentType<any>; // Icon instead of any?
 	label?: string;
 };
 
@@ -21,7 +20,8 @@ export type NavItemWithChildren = NavItem & {
 
 type DocsConfig = {
 	mainNav: NavItem[];
-	sidebarNav: SidebarNavItem[];
+	sidebarPatientNav: SidebarNavItem[];
+	sidebarEmployeeNav: SidebarNavItem[];
 };
 
 export const docsConfig: DocsConfig = {
@@ -52,7 +52,8 @@ export const docsConfig: DocsConfig = {
 			external: true,
 		},
 	],
-	sidebarNav
+	sidebarPatientNav,
+	sidebarEmployeeNav
 };
 
 type Example = {

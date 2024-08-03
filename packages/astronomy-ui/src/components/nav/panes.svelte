@@ -11,7 +11,7 @@
   class="w-full bg-secondary"
 >
   <Pane defaultSize={25}>
-    <ScrollArea class="pl-8 h-full py-6 pr-6 lg:py-8">
+    <ScrollArea orientation="vertical" class="pl-8 h-full py-6 pr-6 lg:py-8">
       <DocsSidebarNav items={docsConfig.sidebarNav} />
     </ScrollArea>
   </Pane>

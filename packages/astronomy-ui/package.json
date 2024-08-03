@@ -134,7 +134,7 @@
     "ag-grid-community": "^32.0.2",
     "auth-astro": "^4.1.2",
     "axios": "^1.7.3",
-    "bits-ui": "^0.21.12",
+    "bits-ui": "^0.21.13",
     "clsx": "^2.1.1",
     "core-js": "^3.37.1",
     "daisyui": "^4.12.10",

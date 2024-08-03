@@ -11,8 +11,147 @@ import PackagePlus from "lucide-svelte/icons/package-plus";
 import BadgeHelp from "lucide-svelte/icons/badge-help";
 import AArrowUp from "lucide-svelte/icons/a-arrow-up";
 import CopyX from "lucide-svelte/icons/copy-x";
+import PhoneCall from "lucide-svelte/icons/phone-call";
 
-export const sidebarNav = [
+export const sidebarPatientNav = [
+  {
+    title: "Patients",
+    href: "/cliniq/patient-list",
+    icon: ContactRound,
+    items: [
+      {
+        title: "Patient Accounts",
+        href: "/cliniq/patient-list",
+        icon: UserRoundPlus,
+      },
+      {
+        title: "Patient Details",
+        href: "/cliniq/patient-detail-list",
+        icon: UserPen,
+      },
+      {
+        title: "Organizations",
+        href: "/cliniq/patient-org-list",
+        icon: UsersRound,
+      },
+      {
+        title: "Memberships",
+        href: "/cliniq/user-asset-list",
+        icon: UserRoundCog,
+      },
+    ],
+  },
+  {
+    title: "Appointments",
+    href: "/cliniq/appointment-list",
+    icon: WalletCards,
+    items: [
+      {
+        title: "Clinic Visits",
+        href: "/cliniq/clinic-appointment-list",
+        icon: CreditCard,
+      },
+      {
+        title: "Home Visits",
+        href: "/cliniq/phone-appointment-list",
+        icon: SquareAsterisk,
+      },
+      {
+        title: "Telemed Calls",
+        href: "/cliniq/card-limit-list",
+        icon: PhoneCall,
+      },
+      {
+        title: "Doctor Schedules",
+        href: "/cliniq/card-limit-list",
+        icon: Asterisk,
+      },
+    ],
+  },
+  {
+    title: "Payments",
+    href: "/cliniq/payment-list",
+    icon: WalletCards,
+    items: [
+      {
+        title: "Issue Request",
+        href: "/cliniq/card-issuance-request-list",
+        icon: PackagePlus,
+      },
+      {
+        title: "Request Review",
+        href: "/cliniq/card-application-review-list",
+        icon: BadgeHelp,
+      },
+      {
+        title: "Update Request",
+        href: "/cliniq/card-update-request-list",
+        icon: AArrowUp,
+      },
+      {
+        title: "Closing Request",
+        href: "/cliniq/card-closing-request-list",
+        icon: CopyX,
+      },
+    ],
+  },
+  {
+    title: "Packages",
+    href: "/cliniq/payment-list",
+    icon: WalletCards,
+    items: [
+      {
+        title: "Issue Request",
+        href: "/cliniq/card-issuance-request-list",
+        icon: PackagePlus,
+      },
+      {
+        title: "Request Review",
+        href: "/cliniq/card-application-review-list",
+        icon: BadgeHelp,
+      },
+      {
+        title: "Update Request",
+        href: "/cliniq/card-update-request-list",
+        icon: AArrowUp,
+      },
+      {
+        title: "Closing Request",
+        href: "/cliniq/card-closing-request-list",
+        icon: CopyX,
+      },
+    ],
+  },
+  {
+    title: "Equipments",
+    href: "/cliniq/payment-list",
+    icon: WalletCards,
+    items: [
+      {
+        title: "Issue Request",
+        href: "/cliniq/card-issuance-request-list",
+        icon: PackagePlus,
+      },
+      {
+        title: "Request Review",
+        href: "/cliniq/card-application-review-list",
+        icon: BadgeHelp,
+      },
+      {
+        title: "Update Request",
+        href: "/cliniq/card-update-request-list",
+        icon: AArrowUp,
+      },
+      {
+        title: "Closing Request",
+        href: "/cliniq/card-closing-request-list",
+        icon: CopyX,
+      },
+    ],
+  },
+];
+
+export const sidebarEmployeeNav = [
   {
     title: "User Accounts",
     href: "/cardman/user-list",
@@ -37,7 +176,7 @@ export const sidebarNav = [
         title: "User Assets",
         href: "/cardman/user-asset-list",
         icon: UserRoundCog,
-      }
+      },
     ],
   },
   {
@@ -79,7 +218,7 @@ export const sidebarNav = [
         title: "Closing Request",
         href: "/cardman/card-closing-request-list",
         icon: CopyX,
-      }
+      },
     ],
   },
 ];

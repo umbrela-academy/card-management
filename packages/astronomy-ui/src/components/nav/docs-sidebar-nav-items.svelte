@@ -15,7 +15,7 @@
     {#each items as item, index (index)}
       {#if item.href}
         <div class="flex flex-row">
-					<svelte:component this={item.icon} class="ml-3 mt-2 h-4 w-4"/>
+					<svelte:component this={item.icon} class="ml-3 mt-2 h-5 w-5"/>
           <a
             href={item.href}
             class={cn(
