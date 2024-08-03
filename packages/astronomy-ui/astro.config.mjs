@@ -5,8 +5,9 @@ import svelte from '@astrojs/svelte';
 import starlight from "@astrojs/starlight";
 import sitemap from "@astrojs/sitemap";
 import node from "@astrojs/node";
-
 import auth from "auth-astro";
+
+import analogjsangular from "@analogjs/astro-angular";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,9 +15,9 @@ export default defineConfig({
     applyBaseStyles: false
   }), svelte(), starlight({
     title: "Card Management User Manual"
-  }), sitemap(), auth()],
+  }), sitemap(), auth(), analogjsangular()],
   site: 'https://cardemon.nep.work',
-  output: "server",
+  output: "hybrid",
   adapter: node({
     mode: "standalone"
   })
