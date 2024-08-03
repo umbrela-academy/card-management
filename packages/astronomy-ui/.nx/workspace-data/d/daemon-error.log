@@ -1,0 +1,26 @@
+Unable to connect to the daemon process.
+
+Messages from the log:
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:22.958Z - Time taken for 'total execution time for createProjectGraph()' 84.58347199857235ms
+[NX Daemon Server] - 2024-08-03T12:32:22.959Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:22.959Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 169. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:22.963Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:25.332Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-08-03T12:32:25.334Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - Time taken for 'changed-projects' 0.16930199414491653ms
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (sources)
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (outputs)
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+
+
+
+More information: /home/rsbn/Documents/buaa/packages/astronomy-ui/.nx/workspace-data/d/daemon.log

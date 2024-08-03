@@ -14,7 +14,7 @@
 
 		setTimeout(() => {
 			isLoading = false;
-			window.location.href = '/dashboard'
+			window.location.href = '/cardman'
 		}, 1200);
 	}
 </script>

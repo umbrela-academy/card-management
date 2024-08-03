@@ -1,0 +1,1070 @@
+[NX Daemon Server] - 2024-08-03T12:32:01.195Z - Started listening on: /tmp/7600b62b3edbc56436aa/d.sock
+[NX Daemon Server] - 2024-08-03T12:32:01.197Z - [WATCHER]: Subscribed to changes within: /home/rsbn/Documents/buaa/packages/astronomy-ui (native)
+[NX Daemon Server] - 2024-08-03T12:32:01.202Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:01.203Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:01.204Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:01.205Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:01.362Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:01.362Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:01.362Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:01.367Z - Time taken for 'loadNxPlugins' 155.58609399944544ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:01.607Z - Time taken for 'build-project-configs' 231.3143149986863ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:01.708Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:01.714Z - Time taken for 'total execution time for createProjectGraph()' 103.68638300150633ms
+[NX Daemon Server] - 2024-08-03T12:32:01.715Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:01.715Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 503. Response time: 7.
+[NX Daemon Server] - 2024-08-03T12:32:01.721Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:01.721Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:01.721Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:01.721Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:01.729Z - Time taken for 'hash changed files from watcher' 0.005530998110771179ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:01.809Z - Time taken for 'build-project-configs' 76.62299500405788ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:01.906Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:01.911Z - Time taken for 'total execution time for createProjectGraph()' 96.60420500487089ms
+[NX Daemon Server] - 2024-08-03T12:32:01.911Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:01.911Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 185. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:01.919Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:02.550Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:02.550Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:02.550Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.550Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.556Z - Time taken for 'hash changed files from watcher' 0.0045370012521743774ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:02.642Z - Time taken for 'build-project-configs' 82.4802469983697ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:02.730Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:02.734Z - Time taken for 'total execution time for createProjectGraph()' 88.80647200345993ms
+[NX Daemon Server] - 2024-08-03T12:32:02.735Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:02.735Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 180. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:02.740Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:02.740Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:02.740Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:02.741Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:02.790Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:02.791Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:02.791Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:02.791Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:02.792Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:02.792Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:02.792Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.792Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.798Z - Time taken for 'hash changed files from watcher' 0.004372000694274902ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:02.879Z - Time taken for 'build-project-configs' 76.81137200444937ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:02.976Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:02.980Z - Time taken for 'total execution time for createProjectGraph()' 97.64766800403595ms
+[NX Daemon Server] - 2024-08-03T12:32:02.981Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:02.981Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 184. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:02.985Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:02.986Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:02.986Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.986Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:02.993Z - Time taken for 'hash changed files from watcher' 0.014473006129264832ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:03.080Z - Time taken for 'build-project-configs' 83.85570199787617ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:03.170Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:03.173Z - Time taken for 'total execution time for createProjectGraph()' 89.07110200077295ms
+[NX Daemon Server] - 2024-08-03T12:32:03.174Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:03.174Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 184. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:03.178Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:09.520Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:09.520Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:09.520Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.520Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.526Z - Time taken for 'hash changed files from watcher' 0.0057220011949539185ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:09.606Z - Time taken for 'build-project-configs' 74.88410100340843ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:09.691Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:09.694Z - Time taken for 'total execution time for createProjectGraph()' 86.57181199640036ms
+[NX Daemon Server] - 2024-08-03T12:32:09.695Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:09.695Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 171. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:09.699Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:09.699Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:09.699Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:09.700Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:09.757Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.758Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.764Z - Time taken for 'hash changed files from watcher' 0.004415005445480347ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:09.845Z - Time taken for 'build-project-configs' 77.87882300466299ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:09.929Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:09.934Z - Time taken for 'total execution time for createProjectGraph()' 84.92802999913692ms
+[NX Daemon Server] - 2024-08-03T12:32:09.935Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:09.935Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 171. Response time: 6.
+[NX Daemon Server] - 2024-08-03T12:32:09.939Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:09.939Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:09.939Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.939Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:09.946Z - Time taken for 'hash changed files from watcher' 0.00450500100851059ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:10.026Z - Time taken for 'build-project-configs' 75.96227499842644ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:10.108Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:10.112Z - Time taken for 'total execution time for createProjectGraph()' 82.75090099871159ms
+[NX Daemon Server] - 2024-08-03T12:32:10.112Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:10.112Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 169. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:10.118Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:11.121Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:11.121Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:11.121Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.121Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.128Z - Time taken for 'hash changed files from watcher' 0.004689998924732208ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.205Z - Time taken for 'build-project-configs' 72.62755899876356ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.290Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:11.295Z - Time taken for 'total execution time for createProjectGraph()' 86.95709700137377ms
+[NX Daemon Server] - 2024-08-03T12:32:11.295Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:11.295Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 169. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:11.302Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:11.302Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:11.302Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:11.302Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:11.353Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:11.353Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:11.353Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:11.353Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:11.354Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:11.354Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:11.354Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.354Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.361Z - Time taken for 'hash changed files from watcher' 0.007546000182628632ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.440Z - Time taken for 'build-project-configs' 74.56046400219202ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.524Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:11.529Z - Time taken for 'total execution time for createProjectGraph()' 85.42271400243044ms
+[NX Daemon Server] - 2024-08-03T12:32:11.530Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:11.530Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 170. Response time: 6.
+[NX Daemon Server] - 2024-08-03T12:32:11.534Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:11.534Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:11.534Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.534Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:11.540Z - Time taken for 'hash changed files from watcher' 0.0048720017075538635ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.626Z - Time taken for 'build-project-configs' 82.67122900485992ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:11.713Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:11.717Z - Time taken for 'total execution time for createProjectGraph()' 87.08769399672747ms
+[NX Daemon Server] - 2024-08-03T12:32:11.718Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:11.718Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 179. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:11.724Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:15.729Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:15.729Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:15.729Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:15.729Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:15.737Z - Time taken for 'hash changed files from watcher' 0.0040090009570121765ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:15.825Z - Time taken for 'build-project-configs' 85.37304199486971ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:15.919Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:15.922Z - Time taken for 'total execution time for createProjectGraph()' 93.30497699975967ms
+[NX Daemon Server] - 2024-08-03T12:32:15.924Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:15.924Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 190. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:15.930Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:15.930Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:15.930Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:15.931Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:15.985Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:15.986Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:15.986Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:15.986Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:15.987Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:15.987Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:15.987Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:15.987Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:15.993Z - Time taken for 'hash changed files from watcher' 0.006164997816085815ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:16.072Z - Time taken for 'build-project-configs' 74.6894849985838ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:16.164Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:16.168Z - Time taken for 'total execution time for createProjectGraph()' 93.32225400209427ms
+[NX Daemon Server] - 2024-08-03T12:32:16.169Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:16.169Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 177. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:16.173Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:16.173Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:16.173Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:16.173Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:16.180Z - Time taken for 'hash changed files from watcher' 0.0036969929933547974ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:16.262Z - Time taken for 'build-project-configs' 78.93010400235653ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:16.351Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:16.355Z - Time taken for 'total execution time for createProjectGraph()' 89.93883099406958ms
+[NX Daemon Server] - 2024-08-03T12:32:16.356Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:16.356Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 178. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:16.360Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:21.325Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - Time taken for 'changed-projects' 0.0563339963555336ms
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (sources)
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (outputs)
+[NX Daemon Server] - 2024-08-03T12:32:21.327Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-08-03T12:32:21.593Z - Started listening on: /tmp/7600b62b3edbc56436aa/d.sock
+[NX Daemon Server] - 2024-08-03T12:32:21.595Z - [WATCHER]: Subscribed to changes within: /home/rsbn/Documents/buaa/packages/astronomy-ui (native)
+[NX Daemon Server] - 2024-08-03T12:32:21.599Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:21.600Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:21.600Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:21.601Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:21.748Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:21.748Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:21.748Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:21.754Z - Time taken for 'loadNxPlugins' 145.50015800446272ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:21.845Z - Time taken for 'build-project-configs' 84.47806899994612ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:21.942Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:21.946Z - Time taken for 'total execution time for createProjectGraph()' 99.08722999691963ms
+[NX Daemon Server] - 2024-08-03T12:32:21.948Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:21.948Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 341. Response time: 6.
+[NX Daemon Server] - 2024-08-03T12:32:21.953Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:21.953Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:21.953Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:21.953Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:21.961Z - Time taken for 'hash changed files from watcher' 0.008616000413894653ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.046Z - Time taken for 'build-project-configs' 80.6388780027628ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.136Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:22.141Z - Time taken for 'total execution time for createProjectGraph()' 91.82542800158262ms
+[NX Daemon Server] - 2024-08-03T12:32:22.142Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:22.142Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 183. Response time: 6.
+[NX Daemon Server] - 2024-08-03T12:32:22.145Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:22.330Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:22.330Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:22.330Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.330Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.337Z - Time taken for 'hash changed files from watcher' 0.0051809996366500854ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.418Z - Time taken for 'build-project-configs' 77.10963200032711ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.512Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:22.516Z - Time taken for 'total execution time for createProjectGraph()' 95.09127800166607ms
+[NX Daemon Server] - 2024-08-03T12:32:22.516Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:22.516Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 182. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:22.521Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:22.521Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-03T12:32:22.521Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:22.522Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:22.583Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.584Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.591Z - Time taken for 'hash changed files from watcher' 0.004117004573345184ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.675Z - Time taken for 'build-project-configs' 78.75900699943304ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.774Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:22.781Z - Time taken for 'total execution time for createProjectGraph()' 100.14158900082111ms
+[NX Daemon Server] - 2024-08-03T12:32:22.781Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:22.781Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 190. Response time: 7.
+[NX Daemon Server] - 2024-08-03T12:32:22.785Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:22.785Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:22.786Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.786Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:22.792Z - Time taken for 'hash changed files from watcher' 0.021411001682281494ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.871Z - Time taken for 'build-project-configs' 74.95403899997473ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:22.954Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:22.958Z - Time taken for 'total execution time for createProjectGraph()' 84.58347199857235ms
+[NX Daemon Server] - 2024-08-03T12:32:22.959Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:22.959Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 169. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:22.963Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:25.332Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-08-03T12:32:25.334Z - [WATCHER]: 0 file(s) created or restored, 3 file(s) modified, 0 file(s) deleted
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-08-03T12:32:25.335Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - Time taken for 'changed-projects' 0.16930199414491653ms
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (sources)
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (outputs)
+[NX Daemon Server] - 2024-08-03T12:32:25.336Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-08-03T12:32:25.652Z - Started listening on: /tmp/7600b62b3edbc56436aa/d.sock
+[NX Daemon Server] - 2024-08-03T12:32:25.654Z - [WATCHER]: Subscribed to changes within: /home/rsbn/Documents/buaa/packages/astronomy-ui (native)
+[NX Daemon Server] - 2024-08-03T12:32:25.655Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:25.656Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:25.657Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:25.658Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:25.745Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:25.807Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:25.807Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:25.807Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:25.808Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:25.856Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:25.856Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:25.856Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:25.860Z - Time taken for 'loadNxPlugins' 46.23940499871969ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:25.959Z - Time taken for 'build-project-configs' 83.99578399956226ms
+[NX Daemon Server] - 2024-08-03T12:32:25.967Z - Time taken for 'loadNxPlugins' 158.72140099853277ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:26.067Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:26.070Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+Error: This socket has been ended by the other party
+    at Socket.writeAfterFIN [as write] (node:net:560:14)
+    at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/shutdown-utils.js:64:16
+    at new Promise (<anonymous>)
+    at respondToClient (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/shutdown-utils.js:60:12)
+    at respondWithErrorAndExit (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/shutdown-utils.js:81:11)
+    at handleResult (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/server.js:143:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async handleMessage (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/server.js:93:9)
+    at async /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/daemon/server/server.js:59:9 {
+  code: 'EPIPE'
+}
+[NX Daemon Server] - 2024-08-03T12:32:26.077Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:26.077Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 409. Response time: 10.
+[NX Daemon Server] - 2024-08-03T12:32:26.078Z - Time taken for 'total execution time for createProjectGraph()' 112.9908630028367ms
+[NX Daemon Server] - 2024-08-03T12:32:26.079Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:26.079Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 262. Response time: 9.
+[NX Daemon Server] - 2024-08-03T12:32:26.085Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:26.085Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:26.085Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.085Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.093Z - Time taken for 'hash changed files from watcher' 0.005901999771595001ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:26.193Z - Time taken for 'build-project-configs' 95.23136100172997ms
+[0.04ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:26.300Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:26.304Z - Time taken for 'total execution time for createProjectGraph()' 107.9599220007658ms
+[NX Daemon Server] - 2024-08-03T12:32:26.305Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:26.305Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 215. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:26.310Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:26.684Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:26.739Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:26.739Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:26.739Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:26.739Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:26.740Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:26.740Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:26.740Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.740Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.747Z - Time taken for 'hash changed files from watcher' 0.004065997898578644ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:26.825Z - Time taken for 'build-project-configs' 74.64032500237226ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:26.923Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:26.927Z - Time taken for 'total execution time for createProjectGraph()' 97.61572200059891ms
+[NX Daemon Server] - 2024-08-03T12:32:26.928Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:26.928Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 183. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:26.932Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:26.932Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:26.932Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.932Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:26.939Z - Time taken for 'hash changed files from watcher' 0.0040490031242370605ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:27.023Z - Time taken for 'build-project-configs' 81.15592899918556ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:27.110Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:27.113Z - Time taken for 'total execution time for createProjectGraph()' 87.36531099677086ms
+[NX Daemon Server] - 2024-08-03T12:32:27.114Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:27.114Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 178. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:27.119Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:27.630Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:27.684Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:27.684Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:27.684Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:27.684Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:27.685Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:27.685Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:27.685Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:27.685Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:27.691Z - Time taken for 'hash changed files from watcher' 0.007096998393535614ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:27.774Z - Time taken for 'build-project-configs' 79.17259300500154ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:27.863Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:27.867Z - Time taken for 'total execution time for createProjectGraph()' 89.45317800343037ms
+[NX Daemon Server] - 2024-08-03T12:32:27.867Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:27.867Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 178. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:27.872Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:27.872Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:27.872Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:27.872Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:27.879Z - Time taken for 'hash changed files from watcher' 0.003965996205806732ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:27.964Z - Time taken for 'build-project-configs' 79.52851500362158ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:28.055Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:28.058Z - Time taken for 'total execution time for createProjectGraph()' 91.73910500109196ms
+[NX Daemon Server] - 2024-08-03T12:32:28.059Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:28.059Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 183. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:28.062Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:31.447Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:31.488Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:31.488Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:31.488Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:31.488Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:31.489Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:31.489Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:31.489Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:31.489Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:31.495Z - Time taken for 'hash changed files from watcher' 0.0050869956612586975ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:31.574Z - Time taken for 'build-project-configs' 74.14184299856424ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:31.663Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:31.666Z - Time taken for 'total execution time for createProjectGraph()' 90.51063700020313ms
+[NX Daemon Server] - 2024-08-03T12:32:31.667Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:31.667Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 174. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:31.671Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:31.671Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:31.671Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:31.671Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:31.678Z - Time taken for 'hash changed files from watcher' 0.0207659974694252ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:31.759Z - Time taken for 'build-project-configs' 78.14665799587965ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:31.856Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:31.859Z - Time taken for 'total execution time for createProjectGraph()' 97.13619700074196ms
+[NX Daemon Server] - 2024-08-03T12:32:31.860Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:31.860Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 185. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:31.866Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:37.388Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:37.436Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:37.437Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:37.437Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:37.437Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:37.438Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:37.438Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:37.438Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:37.438Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:37.446Z - Time taken for 'hash changed files from watcher' 0.008244000375270844ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:37.524Z - Time taken for 'build-project-configs' 74.13469500094652ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:37.608Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:37.612Z - Time taken for 'total execution time for createProjectGraph()' 84.17636899650097ms
+[NX Daemon Server] - 2024-08-03T12:32:37.612Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:37.612Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 170. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:37.616Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:37.616Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:37.616Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:37.616Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:37.623Z - Time taken for 'hash changed files from watcher' 0.004448004066944122ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:37.705Z - Time taken for 'build-project-configs' 78.09846799820662ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:37.787Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:37.791Z - Time taken for 'total execution time for createProjectGraph()' 82.77285099774599ms
+[NX Daemon Server] - 2024-08-03T12:32:37.792Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:37.792Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 171. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:37.796Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:39.110Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:39.152Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:39.152Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:39.152Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:39.152Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:39.153Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:39.153Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:39.153Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:39.153Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:39.159Z - Time taken for 'hash changed files from watcher' 0.02178800106048584ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:39.239Z - Time taken for 'build-project-configs' 76.7274350002408ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:39.328Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:39.331Z - Time taken for 'total execution time for createProjectGraph()' 89.11673099547625ms
+[NX Daemon Server] - 2024-08-03T12:32:39.332Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:39.332Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 175. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:39.336Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:39.336Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:39.336Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:39.336Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:39.343Z - Time taken for 'hash changed files from watcher' 0.004037998616695404ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:39.425Z - Time taken for 'build-project-configs' 78.44211699813604ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:39.512Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:39.515Z - Time taken for 'total execution time for createProjectGraph()' 86.63504300266504ms
+[NX Daemon Server] - 2024-08-03T12:32:39.516Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:39.516Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 176. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:39.522Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:43.859Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:43.901Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:43.902Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:43.908Z - Time taken for 'hash changed files from watcher' 0.0037279948592185974ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:43.988Z - Time taken for 'build-project-configs' 76.45777399837971ms
+[0.03ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:44.078Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:44.082Z - Time taken for 'total execution time for createProjectGraph()' 90.72691299766302ms
+[NX Daemon Server] - 2024-08-03T12:32:44.082Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:44.082Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 176. Response time: 4.
+[NX Daemon Server] - 2024-08-03T12:32:44.088Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:44.088Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:44.088Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:44.088Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:44.096Z - Time taken for 'hash changed files from watcher' 0.003063999116420746ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:44.184Z - Time taken for 'build-project-configs' 84.06052200496197ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:44.267Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:44.271Z - Time taken for 'total execution time for createProjectGraph()' 83.09291300177574ms
+[NX Daemon Server] - 2024-08-03T12:32:44.272Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:44.272Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 179. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:44.277Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:32:53.606Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:53.654Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:53.655Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:53.655Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-03T12:32:53.656Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-03T12:32:53.656Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:53.656Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:53.656Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:53.656Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:53.663Z - Time taken for 'hash changed files from watcher' 0.00366799533367157ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:53.746Z - Time taken for 'build-project-configs' 79.32251999527216ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:53.836Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:53.843Z - Time taken for 'total execution time for createProjectGraph()' 88.98825199902058ms
+[NX Daemon Server] - 2024-08-03T12:32:53.844Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:53.844Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 180. Response time: 8.
+[NX Daemon Server] - 2024-08-03T12:32:53.848Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-03T12:32:53.848Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-03T12:32:53.848Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:53.848Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-03T12:32:53.854Z - Time taken for 'hash changed files from watcher' 0.005505993962287903ms
+[0.02ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:53.937Z - Time taken for 'build-project-configs' 79.24585600197315ms
+[0.01ms] ".env"
+[NX Daemon Server] - 2024-08-03T12:32:54.022Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  An error occurred while processing files for the nx/core/package-json plugin.
+    - package.json: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+      Error: Nx requires the root package.json to specify a name if it is being used as an Nx project.
+          at buildProjectConfigurationFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:97:15)
+          at createNodeFromPackageJson (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:80:21)
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:36:20
+          at /home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:47:33
+          at Array.map (<anonymous>)
+          at createNodesFromFiles (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/utils.js:45:35)
+          at exports.createNodesV2 (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/plugins/package-json/create-nodes.js:30:51)
+          at LoadedNxPlugin.createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:35:65)
+          at LoadedNxPlugin.createNodes.<computed> (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/internal-api.js:45:34)
+          at createNodes (/home/rsbn/Documents/buaa/packages/astronomy-ui/node_modules/nx/src/project-graph/plugins/isolation/plugin-worker.js:54:63)
+[NX Daemon Server] - 2024-08-03T12:32:54.026Z - Time taken for 'total execution time for createProjectGraph()' 85.21189299970865ms
+[NX Daemon Server] - 2024-08-03T12:32:54.027Z - Done responding to the client null
+[NX Daemon Server] - 2024-08-03T12:32:54.027Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 174. Response time: 5.
+[NX Daemon Server] - 2024-08-03T12:32:54.030Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-03T12:33:03.815Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-08-03T12:33:03.817Z - [WATCHER]: Stopping the watcher for /home/rsbn/Documents/buaa/packages/astronomy-ui (sources)
