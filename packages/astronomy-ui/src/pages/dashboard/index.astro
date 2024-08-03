@@ -5,5 +5,5 @@ const helpText = "Helping binding";
 ---
 
 <HelloComponent client:load data-analog-id="hello-component-1"/>
-<HelloComponent [helpText]="Helping" client:load data-analog-id="hello-component-2"/>
-<HelloComponent [helpText]={helpText} client:load data-analog-id="hello-component-3"/>
+<HelloComponent helpText="Helping" client:load data-analog-id="hello-component-2"/>
+<HelloComponent helpText={helpText} client:load data-analog-id="hello-component-3"/>
