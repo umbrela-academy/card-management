@@ -14,7 +14,7 @@
 </script>
 <div class="flex -ml-10 items-center gap-4 border-b bg-muted/40 px-4 ">
   <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
-    <ScrollArea class="pl-8 h-full py-6 pr-6 lg:py-8">
+    <ScrollArea class="pl-8 h-full py-6 pr-4 lg:py-8">
     <a
       href="##"
       class="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
