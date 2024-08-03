@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { SidebarNavItem } from "$lib/components/nav/types";
-	import AlignLeft from "lucide-svelte/icons/align-left"
-
+	
   import { cn } from "$lib/utils";
   let pathname = window.location.pathname;
 
@@ -16,7 +15,7 @@
     {#each items as item, index (index)}
       {#if item.href}
         <div class="flex flex-row">
-					<AlignLeft class="ml-3 mt-2 h-4 w-4"/>
+					<svelte:component this={item.icon} class="ml-3 mt-2 h-4 w-4"/>
           <a
             href={item.href}
             class={cn(

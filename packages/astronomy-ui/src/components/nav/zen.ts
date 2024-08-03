@@ -1,68 +1,84 @@
+import ContactRound from "lucide-svelte/icons/contact-round";
+import UsersRound from "lucide-svelte/icons/users-round";
+import UserPen from "lucide-svelte/icons/user-pen";
+import UserRoundPlus from "lucide-svelte/icons/user-round-plus";
+import UserRoundCog from "lucide-svelte/icons/user-round-cog";
+import WalletCards from "lucide-svelte/icons/wallet-cards";
+import CreditCard from "lucide-svelte/icons/credit-card";
+import SquareAsterisk from "lucide-svelte/icons/square-asterisk";
+import Asterisk from "lucide-svelte/icons/asterisk";
+import PackagePlus from "lucide-svelte/icons/package-plus";
+import BadgeHelp from "lucide-svelte/icons/badge-help";
+import AArrowUp from "lucide-svelte/icons/a-arrow-up";
+import CopyX from "lucide-svelte/icons/copy-x";
+
 export const sidebarNav = [
   {
     title: "User Accounts",
     href: "/cardman/user-list",
+    icon: ContactRound,
     items: [
       {
         title: "Users",
         href: "/cardman/user-list",
-        items: [],
+        icon: UserRoundPlus,
       },
       {
         title: "User Profiles",
         href: "/cardman/user-profile-list",
-        items: [],
+        icon: UserPen,
       },
       {
         title: "User Groups",
         href: "/cardman/user-group-list",
-        items: [],
+        icon: UsersRound,
       },
       {
         title: "User Assets",
         href: "/cardman/user-asset-list",
-        items: [],
+        icon: UserRoundCog,
       }
     ],
   },
   {
-    title: "Cards & Scores",
+    title: "Cards & Keys",
     href: "/cardman/card-list",
+    icon: WalletCards,
     items: [
       {
         title: "Cards",
         href: "/cardman/card-list",
-        items: [],
+        icon: CreditCard,
       },
       {
         title: "Credit Scores",
         href: "/cardman/card-score-list",
-        items: [],
+        icon: SquareAsterisk,
       },
       {
         title: "Prepaid Limits",
         href: "/cardman/card-limit-list",
-        items: [],
+        icon: Asterisk,
       },
       {
-        title: "Issuance Request",
+        title: "Issue Request",
         href: "/cardman/card-issuance-request-list",
-        items: [],
+        icon: PackagePlus,
       },
       {
-        title: "Application Review",
+        title: "Request Review",
         href: "/cardman/card-application-review-list",
-        items: [],
+        icon: BadgeHelp,
       },
       {
         title: "Update Request",
         href: "/cardman/card-update-request-list",
-        items: [],
+        icon: AArrowUp,
       },
       {
         title: "Closing Request",
         href: "/cardman/card-closing-request-list",
-        items: [],
+        icon: CopyX,
       }
     ],
   },

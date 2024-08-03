@@ -1,16 +1,18 @@
+import type { ComponentType } from "svelte";
 import { sidebarNav } from "./zen";
+import {type Icon} from "lucide-svelte";
 
 export type NavItem = {
 	title: string;
 	href?: string;
 	disabled?: boolean;
 	external?: boolean;
-	icon?: any;
+	icon?: ComponentType<Icon>;
 	label?: string;
 };
 
 export type SidebarNavItem = NavItem & {
-	items: SidebarNavItem[];
+	items?: SidebarNavItem[];
 };
 
 export type NavItemWithChildren = NavItem & {
