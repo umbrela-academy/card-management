@@ -19,39 +19,11 @@ export type NavItemWithChildren = NavItem & {
 };
 
 type DocsConfig = {
-	mainNav: NavItem[];
 	sidebarPatientNav: SidebarNavItem[];
 	sidebarEmployeeNav: SidebarNavItem[];
 };
 
 export const docsConfig: DocsConfig = {
-	mainNav: [
-		{
-			title: "Documentation",
-			href: "/docs",
-		},
-		{
-			title: "Components",
-			href: "/docs/components/accordion",
-		},
-		{
-			title: "Themes",
-			href: "/themes",
-		},
-		{
-			title: "Examples",
-			href: "/examples/dashboard",
-		},
-		{
-			title: "Blocks",
-			href: "/blocks",
-		},
-		{
-			title: "GitHub",
-			href: "https://github.com/huntabyte/shadcn-svelte",
-			external: true,
-		},
-	],
 	sidebarPatientNav,
 	sidebarEmployeeNav
 };

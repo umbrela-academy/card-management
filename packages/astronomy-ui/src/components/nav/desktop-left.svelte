@@ -11,7 +11,7 @@
   import UserRoundPlus from "lucide-svelte/icons/user-round-plus";
 </script>
 
-<ScrollArea orientation="vertical" class="pl-4 h-full py-2 pr-4 lg:py-8">
+<ScrollArea orientation="vertical" type="always" class="pl-4 h-full py-2 pr-4 lg:py-8">
   <div class="flex -ml-8 items-center gap-4 border-b bg-muted/40 px-2">
     <nav class="grid items-start px-2 text-sm font-medium lg:px-4">
       <a
